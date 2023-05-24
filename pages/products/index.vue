@@ -21,6 +21,10 @@
     // fetch the products
     const { data: products } = await useFetch('https://fakestoreapi.com/products')
 
+    useHead ({
+        title: 'Product Page Index'
+})
+
 </script>
 
 <style scoped>

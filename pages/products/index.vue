@@ -2,13 +2,14 @@
     <div>
         
         <h2>Product Home</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aperiam vel voluptas nihil alias eos nam molestias culpa veniam eligendi.
-        </p>
+        
+        <div class="grid grid-cols-4 gap-5">
+            <div v-for="p in products">
+                
+                <ProductCard  :product="p"/>
 
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aperiam vel voluptas nihil alias eos nam molestias culpa veniam eligendi.
-        </p>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -16,6 +17,9 @@
     definePageMeta({
         layout: 'products'
     })
+
+    // fetch the products
+    const { data: products } = await useFetch('https://fakestoreapi.com/products')
 
 </script>
 

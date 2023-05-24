@@ -1,5 +1,6 @@
 <template>
     <div>
+        
         <h2>Product Home</h2>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aperiam vel voluptas nihil alias eos nam molestias culpa veniam eligendi.
@@ -12,6 +13,9 @@
 </template>
 
 <script setup>
+    definePageMeta({
+        layout: 'products'
+    })
 
 </script>
 

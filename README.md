@@ -2,6 +2,10 @@
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+## API Used
+- Fake Store API at the [FakeStoreAPI](https://fakestoreapi.com/).
+- Currency API at the [CurrencyAPI](https://app.currencyapi.com).
+
 ## Setup
 
 Make sure to install the dependencies:
